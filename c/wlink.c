@@ -78,7 +78,7 @@
 #include "wcomdef.h"
 #include "objomf.h"
 #include "wlink.h"
-#ifndef __WATCOMC__
+#if !defined(__WATCOMC__) && !defined(__UNIX__)
     #include "clibext.h"
 #endif
 #include "library.h"
@@ -112,7 +112,7 @@ int main( int argc, char ** argv )
 {
     argc = argc;        /* to avoid a warning */
     argv = argv;
-#ifndef __WATCOMC__
+#if !defined(__WATCOMC__) && !defined(__UNIX__)
     _argv = argv;
     _argc = argc;
 #endif

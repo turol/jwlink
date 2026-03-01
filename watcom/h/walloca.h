@@ -34,6 +34,8 @@
 
 #ifdef __WATCOMC__
     #include <malloc.h>
+#elif defined(__UNIX__)
+    #include <alloca.h>
 #else
     #include <stdlib.h>
 #endif

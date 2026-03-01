@@ -29,7 +29,9 @@
 ****************************************************************************/
 
 
+#include <alloca.h>
 #include <string.h>
+#include <stdio.h>
 #include <stdlib.h>
 #include "walloca.h"
 #include "linkstd.h"
@@ -863,7 +865,8 @@ void AddImpLibEntry( char *intname, char *extname, unsigned ordinal )
         currpos += otherlen;
         *currpos++ = '\'';
     } else {
-        utoa( ordinal, currpos, 10 );
+		//utoa( ordinal, currpos, 10 );
+        sprintf(currpos, "%u", ordinal);
         currpos += strlen( currpos );
     }
 #if !defined( __UNIX__ )

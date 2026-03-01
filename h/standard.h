@@ -29,8 +29,10 @@
 ****************************************************************************/
 
 
+#include <linux/limits.h>
 #include <stddef.h>
 #include <stdarg.h>
+#include <strings.h>
 #include <time.h>
 #include <watcom.h>
 
@@ -101,6 +103,26 @@ typedef unsigned        f_handle;
 #else
 #define UNALIGN
 #endif
+
+#ifdef __GNUC__
+#define _WCUNALIGNED
+
+int
+memicmp (const void *vs1, const void *vs2, size_t n);
+
+#define max(a, b) (((a) > (b)) ? (a) : (b))
+
+#ifndef _MAX_PATH
+#define _MAX_PATH (PATH_MAX + 1)
+#endif  // _MAX_PATH
+
+
+char *strupr(char *str);
+
+#define stricmp strcasecmp
+#define strnicmp(a, b, n) strncasecmp(a, b, n)
+
+#endif  // __GNUC__
 
 #if defined( __QNX__ )
     #define _EXE       0

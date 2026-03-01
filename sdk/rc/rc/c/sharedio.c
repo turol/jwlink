@@ -30,6 +30,7 @@
 ****************************************************************************/
 
 
+#include "standard.h"
 #include <string.h>
 #include "watcom.h"
 #include "wresall.h"
@@ -274,7 +275,7 @@ void ReportDupResource( WResID *nameid, WResID *typeid, char *file1,
             break;
         default:
             type = typebuf;
-            itoa( typeid->ID.Num, type, 10 );
+            sprintf(type, "%d", typeid->ID.Num);
             break;
         }
     }
@@ -283,7 +284,7 @@ void ReportDupResource( WResID *nameid, WResID *typeid, char *file1,
         name = WResIDToStr( nameid );
     } else {
         name = namebuf;
-        itoa( nameid->ID.Num, name, 10 );
+        sprintf( name, "%d", nameid->ID.Num );
     }
     if( !typeid->IsName && typeid->ID.Num == (uint_16)RT_STRING ) {
         strbase = ( nameid->ID.Num - 1 ) * 16;

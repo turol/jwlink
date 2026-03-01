@@ -34,7 +34,7 @@
 #define _WATCOM_H_INCLUDED_
 
 #include <errno.h>
-#ifndef __WATCOMC__
+#if !defined(__WATCOMC__) && !defined(__UNIX__)
 #include "clibext.h"
 #endif
 

@@ -58,6 +58,10 @@ static bool     CaughtBreak = FALSE;    // set to TRUE if break hit.
 
 #define TOOMANY EMFILE
 
+#ifndef O_BINARY
+#define O_BINARY 0
+#endif  // O_BINARY
+
 static void CheckBreak( void );
 
 void LnkFilesInit( void )
@@ -465,7 +469,9 @@ char WaitForKey( void )
 void GetCmdLine( char *buff )
 /**********************************/
 {
-    getcmd( buff );
+	//getcmd( buff );
+	abort();
+
 }
 
 void TrapBreak( int sig_num )

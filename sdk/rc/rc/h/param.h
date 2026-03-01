@@ -33,7 +33,7 @@
 
 #include <stdlib.h>
 #include "rctypes.h"
-#if defined( __UNIX__ ) && !defined( __WATCOMC__ )
+#if !defined( __UNIX__ ) && !defined( __WATCOMC__ )
     #include "clibext.h"
 #endif
 #ifndef _MAX_PATH

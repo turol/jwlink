@@ -31,7 +31,7 @@
 
 
 #ifdef export
-#define GLOB       /**/
+#define GLOB      
 #else
 #define GLOB       extern
 #endif

@@ -121,7 +121,7 @@ orl_sec_alignment ORLSecGetAlignment( orl_sec_handle a )
     return( 0 );
 }
 
-orl_return ORLSecGetContents( orl_sec_handle a, char **b )
+orl_return ORLSecGetContents( orl_sec_handle a, unsigned_8 **b )
 {
     a = a;
     b = b;

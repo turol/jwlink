@@ -30,6 +30,7 @@
 
 
 #include <string.h>
+#include <stdio.h>
 #include <stdlib.h>
 #include <ctype.h>
 #include "linkstd.h"
@@ -214,7 +215,7 @@ unsigned DoFmtStr( char *buff, unsigned len, char *src, va_list *args )
                 } else {
                     num = va_arg( *args, unsigned int );
                 }
-                utoa( num, dest, 10 );
+                sprintf(dest, "%u", num);
                 size = strlen( dest );
                 dest += size;
                 len -= size;
@@ -227,7 +228,7 @@ unsigned DoFmtStr( char *buff, unsigned len, char *src, va_list *args )
                 } else {
                     num2 = va_arg( *args, unsigned_32 );
                 }
-                ultoa( num2, dest, 10 );
+                sprintf(dest, "%lu", num2);
                 size = strlen( dest );
                 dest += size;
                 len -= size;

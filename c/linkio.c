@@ -29,19 +29,19 @@
 ****************************************************************************/
 
 
+//#include <dos.h>
+//#include <process.h>
+//#include <conio.h>
 #include <stdio.h>
-#include <dos.h>
 #include <string.h>
 #include <stdlib.h>
-#include <process.h>
-#include <conio.h>
 #include <unistd.h>
 #include "linkstd.h"
 #include "msg.h"
 #include "alloc.h"
 #include "wlnkmsg.h"
 #include "wressetr.h"
-#include "tinyio.h"
+//#include "tinyio.h"
 #include "objio.h"
 #include "fileio.h"
 

@@ -32,7 +32,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#ifdef __WATCOMC__
+#if defined(__WATCOMC__) || defined(__UNIX__)
     #include <malloc.h>     /* for _expand() */
 #endif
 #ifdef TRMEM
@@ -189,8 +189,12 @@ void *LnkExpand( void *src, size_t size )
 #ifdef TRMEM
     return( _trmem_expand( src, size, _trmem_guess_who(), TrHdl ) );
 #else
+#ifdef __UNIX__
+    return( realloc( src, size ) );
+#else  // __UNIX__
     return( _expand( src, size ) );
-#endif
+#endif  // __UNIX__
+#endif  // TRMEM
 }
 
 void *LnkReAlloc( void *src, size_t size )

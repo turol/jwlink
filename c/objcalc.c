@@ -30,6 +30,7 @@
 
 
 #include <string.h>
+#include <strings.h>
 #include <stdlib.h>
 #include <limits.h>
 #include "linkstd.h"

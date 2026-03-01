@@ -1,80 +1,78 @@
 proj_obj = \
-$(OUTD)/autogrp.o \
-$(OUTD)/carve.o   \
-$(OUTD)/cmd16m.o  \
-$(OUTD)/cmdall.o  \
-$(OUTD)/cmddos.o  \
-$(OUTD)/cmdelf.o  \
-$(OUTD)/cmdline.o \
-$(OUTD)/cmdnov.o  \
-$(OUTD)/cmdos2.o  \
-$(OUTD)/cmdphar.o \
-$(OUTD)/cmdqnx.o  \
-$(OUTD)/cmdraw.o  \
-$(OUTD)/cmdtable.o\
-$(OUTD)/cmdutils.o\
-$(OUTD)/dbgall.o  \
-$(OUTD)/dbgcv.o   \
-$(OUTD)/dbgdwarf.o\
-$(OUTD)/dbginfo.o \
-$(OUTD)/dbgstubs.o\
-$(OUTD)/debug.o   \
-$(OUTD)/distrib.o \
-$(OUTD)/global.o  \
-$(OUTD)/hash.o    \
-$(OUTD)/impexp.o  \
-$(OUTD)/libr.o    \
-$(OUTD)/libsupp.o \
-$(OUTD)/linkio.o  \
-$(OUTD)/linkutil.o\
-$(OUTD)/load16m.o \
-$(OUTD)/loaddos.o \
-$(OUTD)/loadelf.o \
-$(OUTD)/loadelf2.o\
-$(OUTD)/loadfile.o\
-$(OUTD)/loadflat.o\
-$(OUTD)/loadnov.o \
-$(OUTD)/loados2.o \
-$(OUTD)/loadpe.o  \
-$(OUTD)/loadphar.o\
-$(OUTD)/loadqnx.o \
-$(OUTD)/loadraw.o \
-$(OUTD)/lsymtab.o \
-$(OUTD)/mapio.o   \
-$(OUTD)/mem.o     \
-$(OUTD)/mixcache.o\
-$(OUTD)/msg.o     \
-$(OUTD)/ntio.o    \
-$(OUTD)/obj2supp.o\
-$(OUTD)/objcache.o\
-$(OUTD)/objcalc.o \
-$(OUTD)/objfree.o \
-$(OUTD)/objio.o   \
-$(OUTD)/objnode.o \
-$(OUTD)/objomf.o  \
-$(OUTD)/objorl.o  \
-$(OUTD)/objpass1.o\
-$(OUTD)/objpass2.o\
-$(OUTD)/objstrip.o\
-$(OUTD)/oldcache.o\
-$(OUTD)/omfreloc.o\
-$(OUTD)/orlstubs.o\
-$(OUTD)/overlays.o\
-$(OUTD)/ovlsupp.o \
-$(OUTD)/permdata.o\
-$(OUTD)/posixio.o \
-$(OUTD)/procfile.o\
-$(OUTD)/reloc.o   \
-$(OUTD)/ring.o    \
-$(OUTD)/ring2.o   \
-$(OUTD)/salloc.o  \
-$(OUTD)/spillio.o \
-$(OUTD)/strtab.o  \
-$(OUTD)/symmem.o  \
-$(OUTD)/symtrace.o\
-$(OUTD)/toc.o     \
-$(OUTD)/virtmem.o \
-$(OUTD)/virtpage.o\
-$(OUTD)/wcomdef.o \
-$(OUTD)/wlink.o   \
-$(OUTD)/wlnkmsg.o
+autogrp.o \
+carve.o   \
+cmd16m.o  \
+cmdall.o  \
+cmddos.o  \
+cmdelf.o  \
+cmdline.o \
+cmdnov.o  \
+cmdos2.o  \
+cmdphar.o \
+cmdqnx.o  \
+cmdraw.o  \
+cmdtable.o\
+cmdutils.o\
+dbgall.o  \
+dbgcv.o   \
+dbgdwarf.o\
+dbginfo.o \
+debug.o   \
+distrib.o \
+global.o  \
+hash.o    \
+impexp.o  \
+libr.o    \
+libsupp.o \
+linkutil.o\
+load16m.o \
+loaddos.o \
+loadelf.o \
+loadelf2.o\
+loadfile.o\
+loadflat.o\
+loadnov.o \
+loados2.o \
+loadpe.o  \
+loadphar.o\
+loadqnx.o \
+loadraw.o \
+lsymtab.o \
+mapio.o   \
+mem.o     \
+mixcache.o\
+msg.o     \
+obj2supp.o\
+objcalc.o \
+objfree.o \
+objio.o   \
+objnode.o \
+objomf.o  \
+objorl.o  \
+objpass1.o\
+objpass2.o\
+objstrip.o\
+omfreloc.o\
+orlstubs.o\
+overlays.o\
+ovlsupp.o \
+permdata.o\
+posixio.o \
+procfile.o\
+reloc.o   \
+ring.o    \
+ring2.o   \
+salloc.o  \
+spillio.o \
+strtab.o  \
+symmem.o  \
+symtrace.o\
+toc.o     \
+virtpage.o\
+wcomdef.o \
+wlink.o   \
+wlnkmsg.o \
+dwlngen.o \
+dwutils.o \
+sharedio.o \
+wridfree.o

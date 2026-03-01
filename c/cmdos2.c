@@ -31,6 +31,8 @@
 
 #include <string.h>
 #include <ctype.h>
+#include <alloca.h>
+#include <linux/limits.h>
 #include "linkstd.h"
 #include "alloc.h"
 #include "walloca.h"
